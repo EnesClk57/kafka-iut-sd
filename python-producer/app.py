@@ -5,7 +5,7 @@ import time
 
 # Define the Kafka broker and topic
 broker = 'kafka.e44394u-dev.svc.cluster.local:9092'
-topic = 'my-first-topic'
+topic = 'partitionned'
 
 # Create a Kafka producer
 producer = KafkaProducer(
