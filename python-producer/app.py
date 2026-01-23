@@ -4,7 +4,7 @@ from datetime import datetime
 import time
 
 # Define the Kafka broker and topic
-broker = 'kafka.e44394u-dev.svc.cluster.local:9092'
+broker = 'my-kafka.e44394u-dev.svc.cluster.local:9092'
 topic = 'partitionned'
 
 # Create a Kafka producer
@@ -13,7 +13,7 @@ producer = KafkaProducer(
     sasl_mechanism='SCRAM-SHA-256',
     security_protocol='SASL_PLAINTEXT',
     sasl_plain_username='user1',
-    sasl_plain_password='VoXRSLWisf',
+    sasl_plain_password='UJKPCJZVTD',
     value_serializer=lambda v: json.dumps(v).encode('utf-8')
 )
 
